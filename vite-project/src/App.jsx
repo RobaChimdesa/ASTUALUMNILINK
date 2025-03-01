@@ -9,6 +9,7 @@ import StudentSignUp from "./Pages/student/StudentSignUp";
 import AlumniSignUp from "./Pages/alumni/AlumniSignUp";
 import FacultySignUp from "./Pages/faculty/FacultySignUp";
 import CompanySignUp from "./Pages/company/CompanySignUp";
+import Footer from "./Components/Footer";
 
 
 
@@ -21,7 +22,7 @@ const App = ()=>{
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<AboutUs/>} />
+            {/* <Route path="/about" element={<AboutUs/>} /> */}
             <Route path="/signup" element={<SignUp />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/signup/student" element={<StudentSignUp/>} />
@@ -30,7 +31,9 @@ const App = ()=>{
             <Route path="/signup/company" element={<CompanySignUp/>} />
           </Routes>
         </div>
-      
+        {/* <AboutUs/>
+        <Footer/>
+       */}
       </div>
     </Router>
   );
