@@ -36,10 +36,10 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-blue-600 p-3">
-          <Link to="/" className="block py-2 text-center hover:text-gray-300">Home</Link>
-          <Link to="/signup" className="block py-2 text-center hover:text-gray-300">Sign Up</Link>
-          <Link to="/signin" className="block py-2 text-center hover:text-gray-300">Sign In</Link>
-          <Link to="/dashboard" className="block py-2 text-center hover:text-gray-300">Dashboard</Link>
+          <Link to="/" className="block py-2 text-center hover:text-gray-300" onClick={() => setIsOpen(!isOpen)}>Home</Link>
+          <Link to="/signup" className="block py-2 text-center hover:text-gray-300" onClick={() => setIsOpen(!isOpen)}>Sign Up</Link>
+          <Link to="/signin" className="block py-2 text-center hover:text-gray-300" onClick={() => setIsOpen(!isOpen)}>Sign In</Link>
+          {/* <Link to="/dashboard" className="block py-2 text-center hover:text-gray-300">Dashboard</Link> */}
         </div>
       )}
     </nav>
