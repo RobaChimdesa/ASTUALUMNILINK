@@ -10,6 +10,9 @@ import AlumniSignUp from "./Pages/alumni/AlumniSignUp";
 import FacultySignUp from "./Pages/faculty/FacultySignUp";
 import CompanySignUp from "./Pages/company/CompanySignUp";
 import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
+import FAQ from "./Components/FAQ";
+import StudentDashboard from "./Pages/student/StudentDashboard";
 
 
 
@@ -29,11 +32,15 @@ const App = ()=>{
             <Route path="/signup/alumni" element={<AlumniSignUp/>} />
             <Route path="/signup/faculty" element={<FacultySignUp/>} />
             <Route path="/signup/company" element={<CompanySignUp/>} />
+            <Route path="/dashboard-student" element={<StudentDashboard/>} />
+            {/* <Route path="/contact" element={<Contact/>} />
+            <Route path="/faq" element={<FAQ/>} /> */}
           </Routes>
         </div>
         {/* <AboutUs/>
         <Footer/>
        */}
+      
       </div>
     </Router>
   );
