@@ -2,6 +2,8 @@ import React from "react";
 import AboutUs from "./About";
 import Footer from "./Footer";
 import logo from '../assets/logo.jpg'
+import ll from '../assets/ll.jpg'
+import mm from '../assets/mm.jpg'
 const Home = () => {
   return (
     <div className="bg-gray-100 text-center">
@@ -12,28 +14,27 @@ const Home = () => {
         </h1>          <p className="text-lg mt-4 text-blue-500 font-bold">Connect with alumni, students, faculty, and industry professionals.</p>
         <a href="/signup" className="mt-6 inline-block bg-blue-600 hover:bg-blue-700 px-6 py-3 text-white font-bold rounded-lg">Get Started</a>
       </section> */}
-      <section className="py-16 text-blue-200  bg-gray-200">  
-      <div className="mt-8 flex justify-center">  
-    <img   
-      src={logo}// Replace with your image path  
-      alt="Connecting Alumni"   
-      className="max-w-full h-auto rounded-lg shadow-lg"  
-    />  
-  </div>  
-  <h1 className="text-3xl md:text-6xl font-extrabold text-center text-red-500 p-4 inline-block">  
-    Welcome to <span className="text-red-400">ASTUALUMNILINK</span>  
+
+<section   
+  className="h-screen py-16 text-blue-200 bg-cover bg-center"  
+  style={{   
+    backgroundImage: `url(${mm})`,   
+    backgroundBlendMode: 'overlay'
+    
+  }}  
+>  
+  <h1 className="text-3xl md:text-6xl font-bold text-center text-black p-4 inline-block text-shadow mt-56">  
+    Welcome to <span className="text-white">ASTUALUMNILINK</span>  
   </h1>  
-  <p className="text-lg md:text-xl mt-4 text-blue-100 font-bold">  
+  <p className="text-lg md:text-xl mt-4 text-black font-bold">  
     Connect with alumni, students, faculty, and industry professionals.  
   </p>  
   <a   
     href="/signup"   
-    className="mt-6 inline-block bg-blue-600 hover:bg-blue-700 px-8 py-4 text-white font-bold rounded-lg transition duration-300"  
+    className="mt-6 inline-block bg-blue-700 hover:bg-blue-800 font-semibold px-8 py-4 text-white font-bold rounded-lg transition duration-300"  
   >  
     Get Started  
   </a>  
-  {/* Image to enhance attractiveness */}  
-  
 </section>  
       <div className="bg-gray-100 min-h-screen">
 
